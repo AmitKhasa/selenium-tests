@@ -1,5 +1,6 @@
 package com.wikia.webdriver.common.templates.fandom;
 
+import com.wikia.webdriver.common.core.configuration.Configuration;
 import com.wikia.webdriver.pageobjectsfactory.pageobject.adsbase.AdsFandomObject;
 
 import org.openqa.selenium.Dimension;
@@ -12,6 +13,7 @@ public class AdsFandomTestTemplate extends FandomTestTemplate {
 
   @Override
   protected void loadFirstPage() {
+    Configuration.setTestValue("forceFandomWikiaDomain", "true");
     // we want to avoid going to qa.fandom.com as logged in user
   }
 

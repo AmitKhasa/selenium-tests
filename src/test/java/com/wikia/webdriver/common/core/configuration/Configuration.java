@@ -172,6 +172,10 @@ public class Configuration {
     return "true".equalsIgnoreCase(getProp("forceFandomDomain"));
   }
 
+  public static Boolean getForceFandomWikiaDomain() {
+    return "true".equalsIgnoreCase(getProp("forceFandomWikiaDomain"));
+  }
+
   public static Boolean getForceWikiOrg() {
     return "true".equalsIgnoreCase(getProp("forceWikiaOrg"));
   }
